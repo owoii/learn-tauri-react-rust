@@ -1,6 +1,7 @@
 import { RouteObject, Navigate } from "react-router-dom";
 import LearnReact from "./Layout/index";
 import Dynamic from "./Dynamic";
+import Tooltip from "./Tooltip";
 import LearnReactNavigation from "./navigation";
 const routes: RouteObject[] = [
   {
@@ -18,6 +19,10 @@ const routes: RouteObject[] = [
       {
         path: "dynamic",
         element: <Dynamic />,
+      },
+      {
+        path: "tooltip",
+        element: <Tooltip />,
       },
     ],
   },

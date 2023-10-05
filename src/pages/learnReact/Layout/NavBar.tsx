@@ -10,7 +10,7 @@ export default function NavBar() {
   if (location.pathname == "/learn-react/nav") {
     icon = <FiHome size={24} />;
   } else {
-    <FiChevronLeft size={24} />;
+    icon = <FiChevronLeft size={24} />;
   }
   function back() {
     if (location.pathname == "/learn-react/nav") {

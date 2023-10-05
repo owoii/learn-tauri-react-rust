@@ -19,8 +19,8 @@ export default [
   },
   {
     title: "tuari API 使用",
-    desc: "desc.......",
-    to: "/",
+    desc: "救命,真的好难懂....",
+    to: "/learn-tauri",
     id: 3,
   },
   {
