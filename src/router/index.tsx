@@ -1,5 +1,5 @@
 import { createBrowserRouter, type RouteObject } from "react-router-dom";
-import MainLayout from "@/layout/MainLayout";
+import MainLayout from "../layout/MainLayout";
 const routes: RouteObject[] = [
   {
     path: "/",
@@ -15,6 +15,7 @@ const modules: {
   import: "default",
 });
 
+//动态添加路由
 for (const route in modules) {
   routes.push(...modules[route]);
 }

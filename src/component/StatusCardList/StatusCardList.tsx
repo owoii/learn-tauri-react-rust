@@ -1,6 +1,5 @@
 import { FiCheck, FiX, FiGithub, FiLogOut } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import navData from "../../pages/learnReact/navigation/nav_data";
 
 // 顶部带颜色的指示栏
 /**
@@ -21,7 +20,7 @@ function NavCardStatusBar({ master }: { master?: boolean }) {
         {isMaster}
       </div>
       {/* 状态指示 */}
-      <div className="w-full h-full rounded-sm transform  ease-in-out duration-150 hover:translate-x-5 bg-green-500"></div>
+      <div className="w-full h-full rounded-sm  transform  ease-in-out duration-150 hover:translate-x-5 bg-green-500"></div>
       <div className="text-light-500 flex justify-center items-center cursor-pointer">
         <FiGithub />
       </div>
@@ -36,11 +35,13 @@ function NavCard({
   master,
 }: Athena.CardData) {
   return (
-    <div className="relative hover:scale-105 transform duration-250">
+    <div className="relative hover:scale-105 transform duration-250 ">
       <NavCardStatusBar master={master} />
-      <div className="relative border-t-0 rounded-t-none bg-light-100 bg-opacity-40 rounded-md p-2 box-border border  border-dark-50 ">
-        <h1 className="text-lg font-medium break-all">{title}</h1>
-        <p className="mb-4 break-all">{desc}</p>
+      <div className="relative border-t-0 flex h-full justify-between flex-col rounded-t-none bg-light-100 bg-opacity-40 rounded-md p-2 box-border border  border-dark-50 ">
+        <div>
+          <h1 className="text-lg font-medium break-all">{title}</h1>
+          <p className="mb-4 break-all">{desc}</p>
+        </div>
         <div className="flex flex-row-reverse items-center gap-1">
           <Link
             to={to}
